@@ -1,0 +1,245 @@
+/* --- General Body and App Styles --- */
+
+body {
+  /* Sets the default font for the entire application to 'Poppins'. */
+  font-family: 'Poppins', sans-serif;
+  /* Applies a subtle linear gradient background to the whole page. */
+  background: linear-gradient(120deg, #fceff9, #fdfdfd);
+  /* Sets the default text color. */
+  color: #333;
+  /* Removes default margin and padding from the body. */
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  /* Ensures the main App container takes up at least the full height of the viewport. */
+  min-height: 100vh;
+  /* A slightly different gradient for the main app container for visual depth. */
+  background: linear-gradient(135deg, #ffe6f7, #f9f9ff);
+}
+
+
+/* --- Navigation Bar Styles --- */
+
+.navbar {
+  /* A pink-themed gradient for the navbar background. */
+  background: linear-gradient(90deg, #f51481, #ff82bf);
+  /* A subtle shadow to make the navbar pop. */
+  box-shadow: 0 3px 10px rgba(80, 15, 15, 0.4);
+}
+
+.navbar-brand {
+  /* Styles for the main brand/logo text in the navbar. */
+  font-weight: 700; /* Bold font weight */
+  font-size: 1.8rem; /* Large font size */
+  color: white !important; /* White color, !important to override Bootstrap defaults. */
+  position: absolute; /* Positioning for layout control. */
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.4); /* Subtle shadow for text readability. */
+}
+
+.nav-link {
+  /* Styles for the navigation links (e.g., Home, Dashboard). */
+  color: white !important;
+  font-weight: 500; /* Medium font weight */
+  transition: 0.3s; /* Smooth transition for hover effects. */
+}
+
+.nav-link:hover {
+  /* Styles for navigation links on hover. */
+  color: #ffeef7 !important; /* Lighter pink color on hover. */
+  text-decoration: underline; /* Adds an underline on hover. */
+}
+
+
+/* --- Home Page Styles --- */
+
+.home-wrapper {
+  /* A full-screen wrapper for the landing page. */
+  background: rgb(255, 195, 230);
+  min-height: 100vh;
+  display: flex; /* Using flexbox for easy centering. */
+  flex-direction: column;
+  justify-content: center; /* Vertically center content. */
+  align-items: center; /* Horizontally center content. */
+  text-align: center;
+  color: #c40494; /* A deep pink text color. */
+  text-decoration-style: solid;
+}
+
+.home-wrapper h1 {
+  /* Styles for the main heading on the home page. */
+  font-size: 5rem;
+  font-weight: 900; /* Extra bold for impact. */
+  margin-bottom: 15px;
+}
+
+.home-wrapper h3 {
+  /* Styles for the subheading on the home page. */
+  font-size: 1.2rem;
+  font-weight: 600;
+  opacity: 0.9; /* Slightly transparent for a softer look. */
+}
+
+
+/* --- Login Page Styles --- */
+
+.login-wrapper {
+  /* Full-screen wrapper for the login page with a gradient background. */
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ffd1e8, #ffeef7);
+}
+
+.login-card {
+  /* The main container card for the login form. */
+  width: 350px;
+  border-radius: 20px; /* Rounded corners */
+  background: white;
+  border: 2px solid #ffb6d9; /* Pink border */
+}
+
+.login-card input {
+  /* Styles for input fields within the login card. */
+  border-radius: 10px;
+  border: 1px solid #ffd1e8;
+}
+
+.login-card button {
+  /* Styles for the login button. */
+  border-radius: 10px;
+  background-color: #ff9acb;
+  border: none;
+  transition: 0.3s; /* Smooth transition for hover. */
+}
+
+.login-card button:hover {
+  background-color: #ff75b3; /* Darker pink on hover. */
+}
+
+
+/* --- General Content & Card Styles --- */
+
+.container h2 {
+  /* Styles for the main heading within content containers (e.g., "Welcome Guest!"). */
+  color: #fa418e;
+  font-weight: 600;
+}
+
+.card {
+  /* General styles for card components (used for TaskManager, WeatherWidget). */
+  border-radius: 15px;
+  border: none;
+  background: #fff6fa; /* A very light pink background. */
+  box-shadow: 0 4px 8px rgba(255, 182, 219, 0.2); /* Soft pink shadow. */
+}
+
+.card h3 {
+  /* Styles for headings within cards. */
+  color: #ff66a3;
+  font-weight: 600;
+}
+
+.card input {
+  /* Styles for input fields within cards. */
+  border-radius: 10px;
+  border: 1px solid #ffb6d9;
+}
+
+.card button {
+  /* Styles for buttons within cards. */
+  background-color: #ff8cb3;
+  border: none;
+  border-radius: 10px;
+}
+
+.card button:hover {
+  background-color: #ee4681; /* Darker pink on hover. */
+}
+
+
+/* --- Task List Styles --- */
+
+.list-group-item {
+  /* Styles for individual task items in the TaskManager. */
+  border-radius: 10px !important; /* Rounded corners, !important to override Bootstrap. */
+  margin-bottom: 8px; /* Space between items. */
+  transition: transform 0.2s, box-shadow 0.2s; /* Smooth transitions for hover effects. */
+}
+
+.list-group-item:hover {
+  /* Lifts the task item and adds a shadow on hover for a nice interactive feel. */
+  transform: translateY(-2px);
+  box-shadow: 0 3px 10px rgba(255, 182, 219, 0.3);
+}
+
+/* Custom background colors for task status */
+.bg-light {
+  background: #fff9fb !important; /* Default task color. */
+}
+.bg-warning {
+  background: #ffde73 !important; /* Color for tasks due soon. */
+}
+.bg-success {
+  background: #6afd62 !important; /* Color for completed tasks. */
+}
+.bg-danger {
+  background: #f72121 !important; /* Color for overdue tasks. */
+}
+
+
+/* --- Chart Styles --- */
+
+canvas {
+  /* Styling for the Chart.js canvas element. */
+  max-width: 600px; /* Limits the maximum width of the chart. */
+  margin: auto; /* Centers the chart. */
+  background: #fffafc;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 0 3px 10px rgba(255, 182, 219, 0.2);
+}
+
+
+/* --- General Button Style --- */
+
+button {
+  font-weight: 500;
+  border-radius: 8px;
+}
+
+
+/* --- Responsive Design for Smaller Screens --- */
+
+@media (max-width: 768px) {
+  /* Adjusts font size of the main home page heading for mobile devices. */
+  .home-wrapper h1 {
+    font-size: 2.2rem;
+  }
+
+  /* Makes the login card wider on smaller screens. */
+  .login-card {
+    width: 90%;
+  }
+
+  /* Ensures the chart canvas takes up the full width available on small screens. */
+  canvas {
+    width: 100% ;
+  }
+}
+
+
+/* --- Navbar Logout Button Styles --- */
+
+.navbar .btn-light {
+  /* Specific styles for the "Logout" button in the navbar. */
+  color: #7c04a0; /* A contrasting purple color. */
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar .btn-light:hover {
+  /* Hover effects for the logout button. */
+  background-color: #fff;
+  color: #a408e2;
+  transform: scale(1.05); /* Slightly enlarges the button on hover. */
+}
