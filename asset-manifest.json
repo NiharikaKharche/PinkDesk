@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/PinkDesk/static/css/main.d3d7d18c.css",
+    "main.js": "/PinkDesk/static/js/main.03283ef7.js",
+    "static/js/453.0adef9d7.chunk.js": "/PinkDesk/static/js/453.0adef9d7.chunk.js",
+    "static/media/download.jpeg": "/PinkDesk/static/media/download.5f10cf1ccb2d2077d966.jpeg",
+    "index.html": "/PinkDesk/index.html",
+    "main.d3d7d18c.css.map": "/PinkDesk/static/css/main.d3d7d18c.css.map",
+    "main.03283ef7.js.map": "/PinkDesk/static/js/main.03283ef7.js.map",
+    "453.0adef9d7.chunk.js.map": "/PinkDesk/static/js/453.0adef9d7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d3d7d18c.css",
+    "static/js/main.03283ef7.js"
+  ]
+}
